@@ -1,14 +1,13 @@
 import java.util.Scanner;
 public class LearningJava{
-<<<<<<< HEAD
 public static void main(String[]args){
         System.out.println("hello there.");
-// testing
         }
-=======
+
     public static void main(String[]args){
         //declare variables
-        String original, reverse = "";
+        String original;
+        String reverse = "";
         //create scanner
         Scanner in = new Scanner(System.in);
         // tell them what to type and record it. store it
@@ -25,5 +24,5 @@ public static void main(String[]args){
         else
             System.out.println("Entered string is not a palindrome.");
     }
->>>>>>> 0dcf0384a56c40d53ca2af3184f50460928f677e
+
 }
