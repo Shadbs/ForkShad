@@ -1,3 +1,5 @@
+package com.peterson.joseph;
+
 import java.util.Scanner;
 public class LearningJava{
 public static void main(String[]args){
