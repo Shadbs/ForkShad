@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class LearningJava{
 public static void main(String[]args){
         System.out.println("hello there.");
-        }
 
-    public static void main(String[]args){
+
+
         //declare variables
         String original;
         String reverse = "";
