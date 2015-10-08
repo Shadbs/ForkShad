@@ -6,9 +6,12 @@ import java.io.Serializable;
  * Created by Joseph on 10/7/2015.
  */
 public class PersonBean implements Serializable {
-    //These are private because once the user enters
+    //These are private because once the user enters this data, it is not to be messed with.
     private String name;
     private String email;
+    private int age;
+    private int height;
+    private int weight;
 //constructor makes it easier
     public PersonBean(String name, String email) {
         this.name = name;
@@ -17,6 +20,7 @@ public class PersonBean implements Serializable {
     //default constructor. We don't need defaults for person since every person is different.
     public PersonBean(){
     }
+    //getters and setters
     public String getName() {
         return name;
     }
@@ -32,5 +36,28 @@ public class PersonBean implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
-    // private means dont mess with it.
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 }
