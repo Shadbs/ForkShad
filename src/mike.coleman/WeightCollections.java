@@ -1,9 +1,12 @@
 package mike.coleman;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.ListIterator;
 
 /**
  * Created by Mike on 10/11/2015.
+ * This will contain a log of weights of the person as entered by the user.
  */
 public class WeightCollections {
     public static void main(String[] args) {
@@ -29,7 +32,7 @@ public class WeightCollections {
 
         // This checks if a particular weight exists in the weightLog ArrayList
         boolean exists = weightLog.contains(180);
-        if (exists == true){
+        if (exists){
             System.out.println("The requested element exists");
         }
         else {
@@ -53,7 +56,11 @@ public class WeightCollections {
             System.out.println(weightLogIterator.previous());
         }
 
-
+        // This sorts the weightLog collection entries in ascending order
+        Collections.sort(weightLog);
+        for(int weight: weightLog){
+            System.out.println(weight);
+        }
 
 
     }
