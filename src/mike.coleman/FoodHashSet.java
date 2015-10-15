@@ -1,8 +1,6 @@
 package mike.coleman;
 
-import javax.print.attribute.HashPrintJobAttributeSet;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -13,15 +11,19 @@ public class FoodHashSet {
     public static void main(String[] args) {
 
         // HashSet does not remember order you put these values into the set, LinkedHashSet does
-        Set<String> mySet = new LinkedHashSet<>();
+        HashSet<String> mySet = new HashSet<>();
         mySet.add("Banana");
         mySet.add("Captain Crunch");
         mySet.add("Cookies");
         mySet.add("Milk");
         mySet.add("Grapes");
 
+        // *****************The following are some HAPPY paths*********************
 
-        Set<String> mySet2 = new LinkedHashSet<>();
+
+
+        // Creates a second set
+        Set<String> mySet2 = new HashSet<>();
         mySet.add("Doritos");
         mySet.add("Taquitos");
 
@@ -55,6 +57,19 @@ public class FoodHashSet {
         // This adds everything from mySet2 into mySet
         mySet.addAll(mySet2);
         System.out.println(mySet);
+
+
+        // *****************The following are some NASTY paths*********************
+
+
+        // Throws IllegalArgumentException when trying to set initial capacity below zero
+        try {
+        HashSet<String> mySet3 = new HashSet<>(-2);
+        } catch (Exception e) {
+            System.out.println("You cannot have a negative initial capacity");
+        }
+
+
 
     }
 }

@@ -17,6 +17,8 @@ public class RestingHrHashMap {
         map.put("Sara", 65);
         map.put("Dead person", 0);
 
+        // *****************The following are some HAPPY paths*********************
+
 
         // This gets the corresponding value from the requested key
         Integer mapValue = map.get("Mike");
@@ -60,7 +62,15 @@ public class RestingHrHashMap {
         map2.putAll(map);
         System.out.println(map2.entrySet());
 
-        // Checks if the two created HashMaps are the same------why would we want to do this?
+        // Checks if the two created HashMaps are the same
         System.out.println(map.entrySet().equals(map2));
+
+
+        // *****************The following are some NASTY paths*********************
+
+        // Inserting a negative load factor
+        LinkedHashMap<String, Integer> anotherMap = new LinkedHashMap(16, (float) -.75);
+
+
     }
 }
