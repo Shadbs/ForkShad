@@ -12,10 +12,10 @@ public class ExerciseAppModel {
     ArrayList persons = new ArrayList();
     public void addPerson(PersonBean aPerson){
         this.persons.add(aPerson);
+
     }
-    //methods do something and return. getters and setters are specific methods that get info and store it.
-    // public int RemovePerson(){
-    // return this.RemovePerson;
-    // }
+    public void getPersons(){
+
+    }
 
 }
