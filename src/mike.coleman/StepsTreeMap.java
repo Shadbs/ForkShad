@@ -1,6 +1,8 @@
 package mike.coleman;
 
-import java.util.*;
+
+import java.util.Collections;
+import java.util.TreeMap;
 
 /**
  * Created by Mike on 10/12/2015.
@@ -17,6 +19,8 @@ public class StepsTreeMap {
         challenge.put(2000, "Sara");
         challenge.put(3000, "Denise");
         challenge.put(10000, "Diane");
+
+        // *****************The following are some HAPPY paths*********************
 
         // Prints the mappings in descending (reverse order) for purposes of the challenge
         System.out.println(challenge);
@@ -37,6 +41,17 @@ public class StepsTreeMap {
         }
 
 
+
+        // *****************The following are some NASTY paths*********************
+
+        // Creates new empty TreeMap, attempts to get lowest key, throws NoSuchElementException
+        TreeMap<String, Integer> aTree = new TreeMap<>();
+
+        try {
+            aTree.firstKey();
+        } catch(Exception e){
+            System.out.println("There is no key ound in the TreeMap");
+        }
 
 
         }
