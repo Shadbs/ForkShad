@@ -10,7 +10,7 @@ import java.io.Serializable;
  */
 public class JSONSandbox implements Serializable{
  public static void main(String[] args) {
-
+// extracts PersonBean and adds the json parameters
          PersonBean newBean = new PersonBean("Shad", "sbstanger@gmail.com", 27, 6, 175);
          try {
              String jsonString = JSONUtilities.stringify(newBean);
@@ -18,10 +18,13 @@ public class JSONSandbox implements Serializable{
          } catch (JSONException e) {
              e.printStackTrace();
          }
-        TestBean newerBean = new TestBean("Shad", "Stanger", 8, 10, 1988);
+        TestBean newerBean = new TestBean("Shad", null, 8, 10, 1988);
         try{
             String jsonString = JSONUtilities.stringify(newerBean);
             System.out.println(jsonString);
-        } catch (JSONException e){e.printStackTrace();}
+        } catch (JSONException e){
+            e.printStackTrace();
+        }
+
      }
  }
