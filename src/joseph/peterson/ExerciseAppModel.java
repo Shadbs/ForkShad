@@ -9,13 +9,15 @@ import java.util.ArrayList;
 public class ExerciseAppModel {
     //This class will hold an array list and
     //the methods to add or remove a person or get all persons
-    ArrayList persons = new ArrayList();
+    ArrayList<PersonBean> persons = new ArrayList<>();
     public void addPerson(PersonBean aPerson){
         this.persons.add(aPerson);
 
     }
-    public void getPersons(){
-
+    //do I need to use the toString method?
+    public ArrayList<PersonBean> getPersons(){
+        return this.persons;
     }
+
 
 }

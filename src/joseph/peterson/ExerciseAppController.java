@@ -1,5 +1,7 @@
 package joseph.peterson;
 
+import java.util.ArrayList;
+
 /**
  * Created by Joseph on 10/13/2015.
  */
@@ -12,7 +14,9 @@ public class ExerciseAppController {
         PersonBean personOne = new PersonBean(name, email, age, height, weight);
         theModel.addPerson(personOne);
     }
-    public void getAllPersons(){
-        theModel.getPersons();
+
+
+    public ArrayList<PersonBean> getAllPersons(){
+        return theModel.getPersons();
     }
 }
