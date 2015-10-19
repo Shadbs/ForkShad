@@ -8,7 +8,7 @@ import java.util.ListIterator;
  * Created by Mike on 10/11/2015.
  * This will contain a log of weights of the person as entered by the user.
  */
-public class WeightCollections {
+public class WeightArrayList {
     public static void main(String[] args) {
         // This just creates an ArrayList weightLog with the following weights
         ArrayList<Integer> weightLog = new ArrayList();
