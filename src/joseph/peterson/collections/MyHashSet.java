@@ -26,5 +26,6 @@ public class MyHashSet {
         } catch (Exception e) {
             System.out.println("You cannot have a negative initial capacity");
         }
+        //this is playing
     }
 }
