@@ -8,11 +8,11 @@ import javax.swing.*;
 public class ExerciseAppView {
 
     private ExerciseAppController baseController;
-    private ExerciseAppModel baseModel;
+    private MyPersonBean personBeans;
+
 
     public ExerciseAppView(ExerciseAppController baseController) {
         this.baseController = baseController;
-
     }
 
     public void displayInformation() {
@@ -22,6 +22,13 @@ public class ExerciseAppView {
                 + " Height: " + baseController.getAppModel().getHeight() + " Weight: " + baseController.getAppModel().getWeight());
 
     }
+
+
+
+//    public void displayPeople(){
+
+//        JOptionPane.showMessageDialog(null, baseModel.toString());
+//    }
 
 
 }

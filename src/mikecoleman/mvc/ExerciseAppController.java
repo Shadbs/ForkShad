@@ -5,12 +5,14 @@ import java.util.Scanner;
 
 /**
  * Created by Mike on 10/15/2015.
+ * This class talks to the ExerciseAppModel, ExerciseAppview, and MyPersonBean to create MyPersonBeans, store, and display them
  */
 public class ExerciseAppController {
     // Directly referenced from the main method to start program here
     public void start() {
         appView.displayInformation();
         makePerson();
+//        appView.displayPeople();
     }
 
     // Instantiate all necessary classes for controller to have access to all parts of the program
@@ -62,7 +64,7 @@ public class ExerciseAppController {
             this.storePerson(name, email, age, height, weight);
         }
         // Output the arrayList persons containing all MyPersonBeans created
-        System.out.println(theModel.persons);
+        // System.out.println(theModel.persons);
 
 
 //        // A different way to output the arrayList persons containing all MyPersonBeans created
