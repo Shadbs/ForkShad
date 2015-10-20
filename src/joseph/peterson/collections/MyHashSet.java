@@ -13,6 +13,7 @@ public class MyHashSet {
 
     }
     public void program() {
+        /*Happy paths*/
         HashSet<String> cards = new HashSet<>();
         cards.add("King of spades");
         cards.add("King of hearts");
@@ -20,12 +21,12 @@ public class MyHashSet {
         cards.add("King of clubs");
         System.out.println(cards);
 
-        /*Here are some nasty paths.*/// Throws IllegalArgumentException when trying to set initial capacity below zero
+        /*Here are some nasty paths.*/
+        /* Throws IllegalArgumentException when trying to set initial capacity below zero */
         try {
-            HashSet<String> mySet3 = new HashSet<>(-2);
+            HashSet<String> aSet = new HashSet<>(-2);
         } catch (Exception e) {
             System.out.println("You cannot have a negative initial capacity");
         }
-        //this is playing
     }
 }
