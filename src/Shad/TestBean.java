@@ -1,4 +1,4 @@
-package com.stanger.shad;
+package Shad;
 
 import java.io.Serializable;
 

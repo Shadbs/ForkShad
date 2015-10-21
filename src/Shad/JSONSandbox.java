@@ -1,13 +1,15 @@
-package com.stanger.shad;
+package Shad;
+import joseph.peterson.*;
 
 import org.quickconnectfamily.json.JSONException;
 import org.quickconnectfamily.json.JSONInputStream;
 import org.quickconnectfamily.json.JSONOutputStream;
 import org.quickconnectfamily.json.JSONUtilities;
-import org.quickconnectfamily.json.tests.TestObject;
 
 import java.io.*;
 import java.util.HashMap;
+import java.io.FileOutputStream;
+import java.io.FileInputStream;
 
 
 /**

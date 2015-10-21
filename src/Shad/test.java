@@ -1,6 +1,7 @@
 // Import the junit libraries
-import org.junit.Test;
+/*import org.junit.Test;
 import static org.junit.Assert.*;
+
 // the procedure we want to test
 public class test {
     junk meep = new junk();
@@ -14,4 +15,4 @@ public class test {
         assertEquals(7,testsum);
     }
 
-}
+}*/
