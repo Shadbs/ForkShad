@@ -14,6 +14,17 @@ public class MyMap {
     }
     public void Map(){
         HashMap<String, Integer> aNewMap = new HashMap<>();
-        aNewMap.isEmpty();
+        aNewMap.put("yo",7);
+        System.out.println("In here is :" + aNewMap);
+        if (!aNewMap.isEmpty()){
+            aNewMap.clear();
+            System.out.println("We deleted what was in here.");
+        }else {
+
+            System.out.println("nothing here to begin with");
+        }
+        System.out.println("now we have " + aNewMap.clone());
+
+
     }
 }

@@ -26,7 +26,7 @@ public class MyHashSet {
         try {
             HashSet<String> aSet = new HashSet<>(-2);
         } catch (Exception e) {
-            System.out.println("You cannot have a negative initial capacity");
+            System.out.println("You cannot start a collection with a negative value");
         }
     }
 }

@@ -1,5 +1,6 @@
 package joseph.peterson;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class ExerciseApp{
     public void go(){
 
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             Scanner in = new Scanner(System.in);
             System.out.println("Enter your name");
             String name = in.nextLine();
@@ -41,6 +42,7 @@ public class ExerciseApp{
         }
         ArrayList<PersonBean> allPeople = controller.getAllPersons();
         System.out.println(allPeople);
+
     }
 
 }
