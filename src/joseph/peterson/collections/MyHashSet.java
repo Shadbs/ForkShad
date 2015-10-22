@@ -28,5 +28,6 @@ public class MyHashSet {
         } catch (Exception e) {
             System.out.println("You cannot start a collection with a negative value");
         }
+        //I just wat to see what happens.
     }
 }

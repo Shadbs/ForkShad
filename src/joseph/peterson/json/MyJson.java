@@ -1,7 +1,7 @@
 package joseph.peterson.json;
 
 
-import jdk.nashorn.internal.runtime.JSONFunctions;
+import org.quickconnectfamily.json.JSONInputStream;
 
 /**
  * Created by Joseph on 10/20/2015.
@@ -16,7 +16,7 @@ public class MyJson {
 
 //nasty path
     public void goBaby() {
-        JSONFunctions.parse("something", null);
-        System.out.println("i dont get JSON in java");
+        JSONInputStream jasonIn = new JSONInputStream();
+        System.out.println("I don't get JSON in java");
     }
 }
