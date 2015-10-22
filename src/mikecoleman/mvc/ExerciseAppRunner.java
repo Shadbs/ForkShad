@@ -12,8 +12,3 @@ public class ExerciseAppRunner {
 
     }
 }
-
-
-
-
-// a simple test change
