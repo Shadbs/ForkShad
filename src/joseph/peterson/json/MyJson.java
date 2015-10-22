@@ -16,7 +16,9 @@ public class MyJson {
 
 //nasty path
     public void goBaby() {
-        JSONInputStream jasonIn = new JSONInputStream();
+       // JSONInputStream jasonIn = new JSONInputStream();
         System.out.println("I don't get JSON in java");
+
+        //testing git stuff
     }
 }
