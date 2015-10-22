@@ -1,34 +1,22 @@
 package mikecoleman.mvc;
 
-import javax.swing.*;
-
 /**
  * Created by Mike on 10/15/2015.
+ * This class will serve the purpose of a View in the MVC pattern.
+ * It will communicate with the controller to display information found in the model
  */
+
 public class ExerciseAppView {
+    // Instantiate the ExerciseAppController class to be able to communicate and update views from the model information
+    private ExerciseAppController appController;
 
-    private ExerciseAppController baseController;
-    private MyPersonBean personBeans;
-
-
-    public ExerciseAppView(ExerciseAppController baseController) {
-        this.baseController = baseController;
+    public ExerciseAppView(ExerciseAppController appController) {
+        this.appController = appController;
     }
 
+    // Method to display all MyPersonBeans found in the ArrayList
     public void displayInformation() {
-        JOptionPane.showMessageDialog(null, "A popup message");
-        JOptionPane.showMessageDialog(null, "Name: " + baseController.getAppModel().getName()
-                + " email: " + baseController.getAppModel().getEmail() + " Age: " + baseController.getAppModel().getAge()
-                + " Height: " + baseController.getAppModel().getHeight() + " Weight: " + baseController.getAppModel().getWeight());
-
+        System.out.println(appController.getAllPersons());
     }
-
-
-
-//    public void displayPeople(){
-
-//        JOptionPane.showMessageDialog(null, baseModel.toString());
-//    }
-
 
 }

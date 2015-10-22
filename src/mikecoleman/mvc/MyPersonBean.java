@@ -2,6 +2,7 @@ package mikecoleman.mvc;
 
 /**
  * Created by Mike on 10/15/2015.
+ * This class is just a JavaBean for users created within the application
  */
 public class MyPersonBean {
 
@@ -19,6 +20,7 @@ public class MyPersonBean {
         this.weight = weight;
     }
 
+    // This is a toString() override to help us display the information found within the MyPersonBeans
     @Override
     public String toString() {
         return "MyPersonBean{" +
